@@ -80,7 +80,7 @@
 			el.setAttribute("class","update");
 			el.innerHTML = `
 				<div>
-					<div class="text-red-500">${message}</div>
+					<div class="text-red-500 text-center">${message}</div>
 				</div>
 			`;
 			messageContainer.appendChild(el);

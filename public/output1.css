@@ -1,0 +1,7 @@
+.app > .screen {
+	display: none;
+
+}
+.app > .screen.active {
+	display: flex;
+}

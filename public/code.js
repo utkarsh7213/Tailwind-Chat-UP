@@ -58,7 +58,7 @@
 			<div class="flex justify-end my-2">
 			<div class=" border-[#26408b] border-2 p-4 rounded-2xl rounded-br-none  max-w-md   ">
 					<div class="name  text-teal-500">You</div>
-					<span class="text-[#1b263b] font-Nunito break-words">${message.text}</span>
+					<span class="text-[#dddedf] font-Nunito break-words">${message.text}</span>
 				</div>
 		</div>
 			`;
@@ -70,7 +70,7 @@
 			<div class="flex justify-start my-2">
                     <div class=" border-[#26408b] border-2 p-4 rounded-2xl rounded-bl-sm  max-w-md   ">
                             <div class="name  text-[#b388eb]">${message.username}</div>
-                            <span class="text-[#1b263b] font-Nunito break-words">${message.text}</span>
+                            <span class="text-[#dcdcdc] font-Nunito break-words">${message.text}</span>
                         </div>
                 </div>
 			`;
@@ -91,7 +91,52 @@
 
 })();
 
-const func=()=>{
-    
-	console.log(messageContainer);
-}
+let bgHead = document.getElementById('chat-screen');
+let btn1 = document.getElementById('btn1');
+let btn2 = document.getElementById('btn2');
+let btn3 = document.getElementById('btn3');
+let btn4 = document.getElementById('btn4');
+let btn5 = document.getElementById('btn5');
+
+
+btn1.addEventListener('click', function() {
+    bgHead.style.backgroundColor = "#03045e";
+});
+
+btn2.addEventListener('click', function() {
+    bgHead.style.backgroundColor = "#240046";
+});
+
+btn3.addEventListener('click', function() {
+    bgHead.style.backgroundColor = "black";
+});
+
+btn4.addEventListener('click', function() {
+    bgHead.style.backgroundColor = "#1c0061";
+});
+
+btn5.addEventListener('click', function() {
+    bgHead.style.backgroundColor = "#2f2235";
+});
+btn6.addEventListener('click', function() {
+    bgHead.style.backgroundColor = "#373d20";
+});
+btn7.addEventListener('click', function() {
+    bgHead.style.backgroundColor = "#5F093D";
+});
+btn8.addEventListener('click', function() {
+    bgHead.style.backgroundColor = "#5E376D";
+});
+btn9.addEventListener('click', function() {
+    bgHead.style.backgroundColor = "#0D659D";
+});
+// bgHead.addEventListener('click', function() {
+//     bgHead.style.backgroundColor = "#FFF";
+// });
+
+$("#click1").click(function(){
+    $(".u7").hide();
+  });
+  $("#click").click(function(){
+      $(".u7").show();
+    });

@@ -87,15 +87,15 @@
     <!-- right side box -->
 
     <div class=" w-2/3 bg-[#3C1A96] h-full rounded-2xl flex justify-center relative items-center flex-col">
-        <div class="bg-[#e5e6e4] h-[98%] w-[95%] rounded-2xl drop-shadow relative chat-screen overflow-auto no-scrollbar" id="chat-screen">
-             <div class="w-full h-[5rem] bg-[#0353a4] rounded-t-2xl flex items-center sticky top-0">
+        <div class="bg-[#e5e6e4] h-[85%] w-[95%] rounded-t-2xl  relative chat-screen overflow-auto no-scrollbar" id="chat-screen">
+             <div class="w-full h-[4rem] bg-[#0353a4] rounded-t-2xl flex items-center sticky top-0">
                 <div class="right-3 absolute">
                     <button id="exit-chat"  class=" px-5 py-2.5 relative rounded-full group overflow-hidden font-medium bg-purple-50 text-purple-600 inline-block">
                         <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                         <span class="relative group-hover:text-white">Exit</span>
                         </button></div>
                 <div class="flex items-center space-x-6 mx-10">
-                    <div class="h-14 w-14 rounded-full bg-gradient-to-r to-red-400 from-yellow-300 ">
+                    <div class="h-11 w-11 rounded-full bg-gradient-to-r to-red-400 from-yellow-300 ">
                      
                     </div>
                     <div class="">
@@ -104,22 +104,16 @@
                 </div>
             </div>
             <div class="">
-                <div class="flex justify-end mr-[12rem]  ">
+                <div class="mx-[4rem] my-[1.5rem] space-y-4">
                     <div class="messages my-6 overflow-auto ">
-                        <div class="bg-gray-100 border-[#26408b] border-2 p-4 rounded-t-xl rounded-bl-xl     ">
-                            <div class="name  text-teal-500">You</div>
-                            <div class="flex flex-col space-y-2 text-base max-w-xs mx-2 order-1 items-end">
-                                <div class="flex flex-col space-y-2 text-xs max-w-[5rem] mx-2 order-1 items-end">
-                                    <div><span class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white break-words ">${message.text}</span></div>
-                                 </div>
-                             </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
         </div>
-        <div class="fixed bottom-12  w-[54rem] flex justify-center z-50 ">
-            <div class="sticky bottom-0  bg-[#0077b6]/80 w-[99%] h-[4rem]  z-30 rounded-md">
+       <div class="bg-[#e5e6e4] h-[10%] w-[95%] rounded-b-2xl justify-center flex items-center">
+        <div class="  w-[54rem] flex justify-center z-50 ">
+            <div class="  bg-[#0077b6] w-[100%] h-[4rem]  z-30 rounded-md">
                 <div class="flex justify-center items-center h-full space-x-4">
                 <input id="message-input" class="bg-white w-[80%] h-[3rem] rounded-full focus:outline-none pl-4 font-Nunito focus:bg-[#e2eafc]" type="text" placeholder="Send a message">
                 <button id="send-message"> 
@@ -127,6 +121,7 @@
             </div>
             </div>
         </div>
+       </div>
     </div>
     <!-- right side box ends here-->
 </div>

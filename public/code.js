@@ -12,7 +12,7 @@
 		}
 		socket.emit("newuser",username);
 		uname = username;
-		
+
 		app.querySelector(".join-screen").classList.remove("active");
 		app.querySelector(".chat-screen").classList.add("active");
 	});
@@ -55,24 +55,24 @@
 			let el = document.createElement("div");
 			el.setAttribute("class","message my-message");
 			el.innerHTML = `
-			<div class="bg-gray-100 border-[#26408b] border-2 p-4 rounded-t-xl rounded-bl-xl     ">
+			<div class="flex justify-end my-2">
+			<div class=" border-[#26408b] border-2 p-4 rounded-2xl rounded-br-none  max-w-md   ">
 					<div class="name  text-teal-500">You</div>
-					<div class="flex flex-col space-y-2 text-base max-w-xs mx-2 order-1 items-end">
-						<div class="flex flex-col space-y-2 text-xs max-w-[5rem] mx-2 order-1 items-end">
-							<div><span class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white ">${message.text}</span></div>
-						 </div>
-					 </div>
+					<span class="text-[#1b263b] font-Nunito break-words">${message.text}</span>
 				</div>
+		</div>
 			`;
 			messageContainer.appendChild(el);
 		} else if(type == "other"){
 			let el = document.createElement("div");
 			el.setAttribute("class","message other-message");
 			el.innerHTML = `
-				<div>
-					<div class="name">${message.username}</div>
-					<div class="text">${message.text}</div>
-				</div>
+			<div class="flex justify-start my-2">
+                    <div class=" border-[#26408b] border-2 p-4 rounded-2xl rounded-bl-sm  max-w-md   ">
+                            <div class="name  text-[#b388eb]">${message.username}</div>
+                            <span class="text-[#1b263b] font-Nunito break-words">${message.text}</span>
+                        </div>
+                </div>
 			`;
 			messageContainer.appendChild(el);
 		} else if(type == "update"){

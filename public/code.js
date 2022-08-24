@@ -55,7 +55,7 @@
 			let el = document.createElement("div");
 			el.setAttribute("class","message my-message");
 			el.innerHTML = `
-			<div class="flex justify-end my-2">
+			<div class="flex justify-end my-2 animatecss-slideInRight  duration-200">
 			<div class=" border-[#26408b] border-2 p-4 rounded-2xl rounded-br-none  max-w-md   ">
 					<div class="name  text-teal-500">You</div>
 					<span class="text-[#dddedf] font-Nunito break-words">${message.text}</span>
@@ -67,7 +67,7 @@
 			let el = document.createElement("div");
 			el.setAttribute("class","message other-message");
 			el.innerHTML = `
-			<div class="flex justify-start my-2">
+			<div class="flex justify-start my-2 animatecss-slideInLeft  duration-200">
                     <div class=" border-[#26408b] border-2 p-4 rounded-2xl rounded-bl-sm  max-w-md   ">
                             <div class="name  text-[#b388eb]">${message.username}</div>
                             <span class="text-[#dcdcdc] font-Nunito break-words">${message.text}</span>

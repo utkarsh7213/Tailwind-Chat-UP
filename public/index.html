@@ -45,12 +45,12 @@
 
 <div class="bg-[#3C1A96] h-[95%] w-[95%] rounded-2xl  flex screen chat-screen absolute">
     <!-- left side box -->
-    <div class=" w-1/3 bg-[#3C1A96] h-full rounded-2xl flex justify-center items-center ">
+    <div class=" w-1/3 bg-[#390099] h-full rounded-l-2xl flex justify-center items-center ">
         
         <div class="bg-[#e5e6e4] drop-shadow h-[95%] w-[90%] rounded-2xl overflow-auto no-scrollbar relative" >
 
             <!-- Settings Menu  -->
-            <div class="bg-[#f5e6e8]  h-full w-full rounded-2xl z-50  no-scrollbar absolute u7 hidden animatecss-backInDown duration-500">
+            <div class="bg-[#e5e6e4]  h-full w-full rounded-2xl z-[1000]  no-scrollbar absolute u7 hidden animatecss-fadeInRightBig duration-300">
                 <div class="flex justify-center items-center py-8 bg-[#0353a4]">
                     <div class="absolute left-8">
                         
@@ -79,24 +79,38 @@
                             </div>
             <!-- Settings Menu Ends Here -->
 
+
             <div class="z-10 w-full h-[5rem] bg-[#0353a4] rounded-t-2xl flex items-center justify-center sticky top-0">
+                <div class="flex flex-col items-center ">
  <h1 class="font-Nunito text-3xl text-gray-100  ">Welcome to the Room</h1>
+  <span class="text-gray-100/80 font-serif">Your ID : <span class="font-mono ">4454DSW</span></span>
+</div>
             </div>
+          
 
             <div class="flex justify-center pt-8 ] bg-[#e5e6e4] p-2 top-20 sticky ">
                 <div class="rounded-3xl h-[2rem] w-[10rem]  bg-[#560bad] text-center pt-[0.200rem] "> 
                     <span class="font-Nunito text-xl text-gray-100">Online Users</span>
                 </div>
             </div>
+            
             <div class="flex justify-center my-5 flex-col items-center space-y-3">
                 <div class="flex space-x-3">
                     <p class="h-5 w-5 rounded-full bg-green-500"> </p>
                   <span class="font-Nunito text-[#023047]">Utkarsh Singh</span>
                 </div>
+             
 
             </div>
             
-
+           
+        </div>
+        <div class="flex justify-center bg-[#e5e6e4] fixed bottom-9 px-20 py-8 -z-[0.2]">
+            <div class=" ">
+<button class="bg-[#00296b]/90 p-2 rounded-full hover:bg-[#0353a4] transition duration-300">
+    <p class="text-gray-50 font-Nunito">Invite Members</p>
+</button>
+            </div>
         </div>
     </div>
     <!-- left side box ends here-->
@@ -120,7 +134,7 @@
 
     <!-- right side box -->
 
-    <div class=" w-2/3 bg-[#3C1A96] h-full rounded-2xl flex justify-center relative items-center flex-col">
+    <div class=" w-2/3 bg-[#390099] h-full rounded-r-2xl flex justify-center relative items-center flex-col">
         <div  class="bg-[#03045e] h-[85%] w-[95%] rounded-t-2xl  relative chat-screen overflow-auto no-scrollbar bg-cver bg-center z-10" id="chat-screen" >
             
              <div class="w-full h-[4rem] bg-[#0353a4] rounded-t-2xl flex items-center  sticky top-0 shadow-md justify-between pr-8 ">
@@ -128,6 +142,7 @@
                      <div class="h-11 w-11 rounded-full bg-gradient-to-r to-red-400 from-yellow-300"></div>
                     <div class="">
                         <span class="font-LexendDeca text-gray-50">Parvesh Sharma</span>
+                        
                     </div>
                 </div>
                 <div class="flex items-center gap-10 ">
@@ -146,7 +161,7 @@
            
             <div class="">
                 <div class="mx-[4rem] my-[1.5rem] space-y-4">
-                    <div class="messages my-6 overflow-auto ">
+                    <div class="messages my-6 overflow-hidden ">
                        
                     </div>
                 </div>
@@ -157,8 +172,10 @@
             <div class="  bg- w-[100%] h-[4rem]  rounded-md">
                 <div class="flex justify-center items-center h-full space-x-4">
                 <input id="message-input" class="bg-white w-[80%] h-[3rem] rounded-full focus:outline-none pl-4 font-Nunito focus:bg-[#e2eafc]" type="text" placeholder="Send a message">
-                <button id="send-message"> 
-                    <svg class="w-10 h-10 fill-[#240046]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.34,9.32l-14-7a3,3,0,0,0-4.08,3.9l2.4,5.37h0a1.06,1.06,0,0,1,0,.82l-2.4,5.37A3,3,0,0,0,5,22a3.14,3.14,0,0,0,1.35-.32l14-7a3,3,0,0,0,0-5.36Zm-.89,3.57-14,7a1,1,0,0,1-1.35-1.3l2.39-5.37A2,2,0,0,0,6.57,13h6.89a1,1,0,0,0,0-2H6.57a2,2,0,0,0-.08-.22L4.1,5.41a1,1,0,0,1,1.35-1.3l14,7a1,1,0,0,1,0,1.78Z"/></svg></button>
+                <div >
+                <button class="bg-white rounded-full h-[3rem] w-12 flex items-center justify-center" id="send-message"> 
+                    <svg class="w-10 h-10 fill-[#390099]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.34,9.32l-14-7a3,3,0,0,0-4.08,3.9l2.4,5.37h0a1.06,1.06,0,0,1,0,.82l-2.4,5.37A3,3,0,0,0,5,22a3.14,3.14,0,0,0,1.35-.32l14-7a3,3,0,0,0,0-5.36Zm-.89,3.57-14,7a1,1,0,0,1-1.35-1.3l2.39-5.37A2,2,0,0,0,6.57,13h6.89a1,1,0,0,0,0-2H6.57a2,2,0,0,0-.08-.22L4.1,5.41a1,1,0,0,1,1.35-1.3l14,7a1,1,0,0,1,0,1.78Z"/></svg></button>
+                </div>
             </div>
             </div>
         </div>

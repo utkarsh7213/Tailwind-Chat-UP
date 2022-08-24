@@ -140,3 +140,5 @@ $("#click1").click(function(){
   $("#click").click(function(){
       $(".u7").show();
     });
+
+	$(".loader").fadeTo(1500,1).fadeOut(200);

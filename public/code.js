@@ -142,3 +142,9 @@ $("#click1").click(function(){
     });
 
 	$(".loader").fadeTo(1500,1).fadeOut(200);
+
+	$("#message-input").keypress(function(event) {
+		if (event.keyCode === 13) {
+			$("#send-message").click();
+		}
+	});

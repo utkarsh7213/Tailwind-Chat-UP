@@ -7,7 +7,7 @@
     ],
     "routes": [
       {
-        "public": "/(.*)",
+        "src": "/(.*)",
         "dest": "/server.js"
       }
     ]

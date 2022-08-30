@@ -9,6 +9,11 @@ const io = require("socket.io")(server);
 
 app.use(express.static(path.join(__dirname + "/public")));
 
+app.get('/', (req, res) => {
+  res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+})
+module.exports = app
+
 var users = [];
 
 io.on("connection", function (socket) {
@@ -51,4 +56,4 @@ io.on("connection", function (socket) {
   }
 });
 
-server.listen(5000);
+server.listen(5001);

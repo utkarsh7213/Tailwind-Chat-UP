@@ -176,3 +176,34 @@ btn9.addEventListener("click", function () {
 // bgHead.addEventListener('click', function() {
 //     bgHead.style.backgroundColor = "#FFF";
 // });
+
+let modal = document.getElementById("my-modal");
+
+    let btn = document.getElementById("open-btn");
+
+    let button = document.getElementById("ok-btn");
+
+      // We want the modal to open when the Open button is clicked
+      btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        // We want the modal to close when the OK button is clicked
+        button.onclick = function() {
+        modal.style.display = "none";
+        }
+
+         // The modal will close when the user clicks anywhere outside the modal
+    window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+      }
+
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+      
